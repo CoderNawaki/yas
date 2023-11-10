@@ -67,8 +67,6 @@ public class SecurityConfig {
             return mappedAuthorities;
         };
     }
-
-
     Collection<GrantedAuthority> generateAuthoritiesFromClaim(Collection<String> roles) {
         return roles.stream()
                 .map(role -> new SimpleGrantedAuthority("ROLE_" + role))

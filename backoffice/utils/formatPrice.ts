@@ -6,7 +6,7 @@ export function formatPriceVND(price: number): any {
 
   return formatter.format(price);
 }
-
+//exporting the function that gives prices
 export function formatPriceUSD(price: number): any {
   const formatter = new Intl.NumberFormat('en-us', {
     style: 'currency',
