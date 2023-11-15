@@ -13,6 +13,5 @@ public interface StockRepository extends JpaRepository<Stock, Long> {
 
     List<Stock> findByWarehouseId(Long warehouseId);
 
-    List<Stock> findByWarehouseIdAndProductIdIn(Long warehouseId,
-                                                List<Long> productIds);
+    List<Stock> findByWarehouseIdAndProductIdIn(Long warehouseId,List<Long> productIds);
 }
